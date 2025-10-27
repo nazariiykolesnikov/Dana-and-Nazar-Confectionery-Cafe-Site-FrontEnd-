@@ -1421,20 +1421,26 @@ footer .copyright p {
 }
 
 @media (max-width: 768px) {
+  /* Загальні стилі */
   body {
     font-size: 16px;
+    overflow-x: hidden;
   }
 
   .section__paragraph1 {
     padding: 20px;
   }
 
+  h1 { font-size: 28px; }
+  h2 { font-size: 24px; }
+  h4 { font-size: 20px; }
+  p  { font-size: 16px; }
+
   /* Header */
   #header {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 20px;
     position: sticky;
     top: 0;
@@ -1443,14 +1449,21 @@ footer .copyright p {
 
   .logo,
   .shopping-cart,
-  .user-woman {
-    width: 55px !important;
-    height: 55px !important;
+  .user-woman,
+  #mobile img,
+  #mobile a img,
+  #navbar li a img,
+  #bar,
+  #close img {
+    width: 42px !important;
+    height: 42px !important;
+    object-fit: contain;
   }
 
   #mobile {
     display: flex;
     align-items: center;
+    gap: 12px;
   }
 
   #navbar {
@@ -1523,10 +1536,13 @@ footer .copyright p {
     width: 100%;
     font-size: 15px;
     padding: 10px 20px;
+    background-color: transparent;
+    color: #9b1762;
   }
 
   #hero button:hover {
-    border-width: 3px;
+    color: #ed579d;
+    border: 3px solid #ed579d;
   }
 
   /* Slider */
@@ -1556,32 +1572,6 @@ footer .copyright p {
   .slider-arrow {
     font-size: 1.5rem;
     padding: 6px;
-  }
-
-  /* Feature */
-  #feature {
-    flex-direction: column;
-    align-items: center;
-    padding: 12px;
-  }
-
-  #feature .fe-box {
-    width: 92%;
-    max-width: 420px;
-    padding: 18px 12px;
-    margin: 10px 0;
-    box-shadow: 10px 12px 24px rgba(0,0,0,0.03);
-  }
-
-  #feature .fe-box img {
-    width: 100%;
-    max-height: 220px;
-    object-fit: cover;
-  }
-
-  #feature .fe-box h6 {
-    font-size: 14px;
-    padding: 6px 10px;
   }
 
   /* Products */
@@ -1623,14 +1613,25 @@ footer .copyright p {
 
   #product1 .pro .des span {
     font-size: 16px;
+    color: #606063;
   }
 
   #product1 .pro .des h5 {
-    font-size: 16px;
+    font-size: 17px;
+    color: #1a1a1a;
+    padding-top: 6px;
+  }
+
+  #product1 .pro .des i {
+    font-size: 18px;
+    color: rgb(243,181,25);
   }
 
   #product1 .pro .des h4 {
     font-size: 20px;
+    color: #ed579d;
+    font-weight: 700;
+    padding-top: 6px;
   }
 
   #product1 .pro .cart {
@@ -1638,82 +1639,29 @@ footer .copyright p {
     height: 50px;
     bottom: 12px;
     right: 12px;
+    border-radius: 50px;
+    border: 3px solid #8f918f;
+    background-size: cover;
+    position: absolute;
+    cursor: pointer;
+    color: #ed579d;
   }
 
-  /* Banners */
-  #banner {
+  #product1 .pro .cart:hover {
+    opacity: 0.75;
+  }
+
+  /* Video */
+  .videoplayer_container iframe {
+    width: 100%;
+    max-width: 100%;
     height: auto;
-    padding: 28px 16px;
-    text-align: center;
+    border-radius: 12px;
   }
 
-  #banner h2 {
-    font-size: 24px;
-  }
-
-  #banner h4 {
-    font-size: 18px;
-  }
-
-  #banner h2 span {
-    color: #ef3636;
-  }
-
-  #banner button {
-    width: 90%;
-    font-size: 16px;
-    padding: 10px 12px;
-  }
-
-  #sm-banner {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 12px;
-  }
-
-  #sm-banner .banner-box {
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-  }
-
-  #sm-banner h4 {
-    font-size: 20px;
-  }
-
-  #sm-banner h2 {
-    font-size: 18px;
-  }
-
-  #sm-banner span {
-    font-size: 18px;
-    padding-bottom: 8px;
-  }
-
-  #sm-banner button {
-    width: 80%;
-    padding: 10px 14px;
-    font-size: 16px;
-  }
-
-  #banner3 {
-    flex-direction: column;
-    padding: 12px;
-  }
-
-  #banner3 .banner-box {
-    width: 100%;
-    padding: 16px;
-    margin-bottom: 12px;
-  }
-
-  #banner3 h2 {
-    font-size: 22px;
-  }
-
-  #banner3 h3 {
-    font-size: 18px;
+  .videoplayer_wrapper {
+    padding: 0 12px;
+    overflow-x: hidden;
   }
 
   /* Newsletter */
@@ -1796,10 +1744,23 @@ footer .copyright p {
   footer p,
   footer a {
     font-size: 15px;
+    color: #222;
   }
 
   footer .follow .icon i {
     font-size: 28px;
     margin: 0 6px;
+  }
+
+  footer .install img {
+    max-width: 140px;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  footer .copyright p {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
   }
 }
