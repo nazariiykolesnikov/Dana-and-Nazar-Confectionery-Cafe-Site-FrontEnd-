@@ -22,6 +22,13 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="#"><img src="./assets/images/Icons/Heart/Heart.png" class="fas fa-heart" alt=""></a></li>
+                <div id="favoritesPanel" class="side-panel">
+                    <div class="panel-header">
+                        <h3>💖 Your favorites</h3>
+                        <button id="closeFavoritesBtn">✖</button>
+                    </div>
+                    <ul id="favoriteItems"></ul>
+                </div>
                 <li id="lg-bag"><a href="cart.html"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="shopping-cart" alt=""></a></li>
                 <li id="user-menu-toggle">
                     <a href="#"><img src="./assets/images/Icons/User/Woman/WomanUser.png" class="user-woman" alt="User"></a>
@@ -33,12 +40,12 @@
                         <li><a href="logout.html">🚪 Exit</a></li>
                     </ul>
                 </li>
-                <a href="#" id="close"><img src="./assets/images/Icons/45654656356546452567.png" class="logo" alt=""></a>
+                <a href="#" id="close"><img src="./assets/images/Icons/Close/Close.png" class="logo" alt=""></a>
             </ul>
         </div>
         <div id="mobile">
-            <a href="cart.html"><img src="./assets/images/Icons/35435345342534534534.png" class="shopping-cart" alt=""></a>
-            <img id="bar" src="./assets/images/Icons/images/logo/23442436546464565464.png" class="logo" alt="">
+            <a href="cart.html"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="shopping-cart" alt=""></a>
+            <img id="bar" src="./assets/images/Icons/Bars/Bars.png" class="logo" alt="">
         </div>
     </section>
     <section id="heroSlider" class="slider">
@@ -167,7 +174,7 @@
         <p>Summer Collection New Modern Designs</p>
         <div class="pro-container">
             <div class="pro" data-name="Basbousa (Middle Eastern Semolina Cake)" data-price="2.00" data-image="./assets/images/Products/Basbousa/Basbousa01.jpg">
-                <img src="./assets/images/Products/Basbousa/Basbousa01.jpg" alt="">
+                <img class="product-img" src="./assets/images/Products/Basbousa/Basbousa01.jpg" alt="">
                 <div class="des">
                     <span>Cakes</span>
                     <h5>Basbousa (Middle Eastern Semolina Cake)</h5>
@@ -183,12 +190,12 @@
                 <div class="card-actions">
                     <button class="favorite-btn" title="Add to your favorites">
                         <i class="fas fa-heart"></i>
-                    </button><br />
+                    </button>
                     <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
                 </div>
             </div>
-            <div class="pro" data-name="Umm Ali (Egyptian Bread Pudding)" data-price="2.25" data-image="./assets/images/Products/Umm Ali/Umm Ali01.jpg">
-                <img src="./assets/images/Products/Umm Ali/Umm Ali01.jpg" alt="">
+            <div class="pro" data-name="Umm Ali (Egyptian Bread Pudding)" data-price="2.15" data-image="./assets/images/Products/Umm Ali/Umm Ali01.jpg">
+                <img class="product-img" src="./assets/images/Products/Umm Ali/Umm Ali01.jpg" alt="">
                 <div class="des">
                     <span>Puddings</span>
                     <h5>Umm Ali (Egyptian Bread Pudding)</h5><br/>
@@ -199,12 +206,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 2.25</h4>
+                    <h4>$ 2.15</h4>
                 </div>
-                <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>              
             </div>
             <div class="pro" data-name="Kunafeh (Egyptian dessert made from crispy dough (kadayef) soaked in sweet syrup)" data-price="3.00" data-image="./assets/images/Products/Kunafeh/Kunafeh01.jpg">
-                <img src="./assets/images/Products/Kunafeh/Kunafeh01.jpg" alt="">
+                <img class="product-img" src="./assets/images/Products/Kunafeh/Kunafeh01.jpg" alt="">
                 <div class="des">
                     <span>Desserts</span>
                     <h5>Kunafeh (Egyptian dessert made from crispy dough (kadayef) soaked in sweet syrup)</h5><br/>
@@ -217,10 +229,15 @@
                     </div>
                     <h4>$ 3.00</h4>
                 </div>
-                <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>    
             </div>
-            <div class="pro" data-name="Aish El-Saraya (Lebanese bread of the royal palace)" data-price="7.75" data-image="./assets/images/Products/AishElSaraya/AishElSaraya01.jpg">
-                <img src="./assets/images/Products/AishElSaraya/AishElSaraya01.jpg" alt="">
+            <div class="pro" data-name="Aish El-Saraya (Lebanese bread of the royal palace)" data-price="1.75" data-image="./assets/images/Products/AishElSaraya/AishElSaraya01.jpg">
+                <img class="product-img" src="./assets/images/Products/AishElSaraya/AishElSaraya01.jpg" alt="">
                 <div class="des">
                     <span>Breads</span>
                     <h5>Aish El-Saraya (Lebanese bread of the royal palace)</h5><br/>
@@ -231,12 +248,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 1.75</h4>
                 </div>
-                <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
             </div>
             <div class="pro" data-name="Qatayef (Arabian pancake stuffed with sweet cheese filling and ground pistachios)" data-price="7.75" data-image="./assets/images/Products/Qatayef/Qatayef01.jpg">
-                <img src="./assets/images/Products/Qatayef/Qatayef01.jpg" alt="">
+                <img class="product-img" src="./assets/images/Products/Qatayef/Qatayef01.jpg" alt="">
                 <div class="des">
                     <span>Pancakes</span>
                     <h5>Qatayef (Arabian pancake stuffed with sweet cheese filling and ground pistachios)</h5><br/>
@@ -249,13 +271,60 @@
                     </div>
                     <h4>$ 7.75</h4>
                 </div>
-                <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>   
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/3e4860a126e744cc96d8afaac62ebef9.jpg" alt="">
+            <div class="pro" data-name="Yabluchnyk (Ukrainian Apple Cake)" data-price="1.95" data-image="images/products/mehallab-full-mood-400x394.jpg">
+                <img class="product-img" src="./assets/images/Products/Yabluchnyk/Yabluchnyk01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Yabluchnyk (Ukrainian Apple Cake)</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 1.95</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
+            </div>
+            <div class="pro" data-name="Nylisniki with cottage cheese" data-price="1.45" data-image="./assets/images/Products/Nylisniki/Nylisniki01.jpg">
+                <img class="product-img" src="./assets/images/Products/Nylisniki/Nylisniki01.jpg" alt="">
+                <div class="des">
+                    <span>Pancakes</span>
+                    <h5>Nylisniki with cottage cheese</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 1.45</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
+            </div>
+            <div class="pro" data-name="Verguny (Ukrainian sweet pastries, made with poppy seeds or nut)" data-price="1.45" data-image="./assets/images/Products/Verguny/Verguny01.jpg">
+                <img class="product-img" src="./assets/images/Products/Verguny/Verguny01.jpg" alt="">
+                <div class="des">
+                    <span>Pastries</span>
+                    <h5>Verguny (Ukrainian sweet pastries, made with poppy seeds or nut)</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -265,13 +334,18 @@
                     </div>
                     <h4>$ 7.75</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/ukrainian-desserts-13-1024x683.jpg" alt="">
+            <div class="pro" data-name="Shulyki" data-price="1.25" data-image="./assets/images/Products/Shulyki/Shulyki01.jpg">
+                <img class="product-img" src="./assets/images/Products/Shulyki/Shulyki01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cookies</span>
+                    <h5>Shulyki</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -279,15 +353,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 1.25</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/studio-session-263.jpg" alt="">
+            <div class="pro" data-name="Carrot Cake" data-price="2.10" data-image="./assets/images/Products/Carrot Cake/Carrot Cake.jpg">
+                <img class="product-img" src="./assets/images/Products/CarrotCake/CarrotCake01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Carrot Cake</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -295,15 +374,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 2.10</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/feature-image-ukraine-desserts-updated.webp" alt="">
+            <div class="pro" data-name="Cake 'Hopak'" data-price="1.75" data-image="./assets/images/Products/CakeHopak/CakeHopak01.jpg">
+                <img style="width: 305px; height: 255px;" src="./assets/images/Products/CakeHopak/CakeHopak01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Cake 'Hopak'</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -311,47 +395,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 1.75</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/BLOG-CHERRY-SOLOZHENIK-featured-image-3-by-Slava-Johnson@flckr-700x500.jpg" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
-                    <div claas="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$ 7.75</h4>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/festive-feast_2.jpg" alt="">
+            <div class="pro" data-name="Cake 'Dovbush'" data-price="1.35" data-image="./assets/images/Products/CakeDovbush/CakeDovbush01.pn">
+                <img class="product-img" src="./assets/images/Products/CakeDovbush/CakeDovbush01.png" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
-                    <div claas="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$ 7.75</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Cake 'Dovbush'</h5><br/>
                     <div claass="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -359,15 +416,101 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 1.35</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
+            <div class="pro" data-name="Cheesecake" data-price="1.55" data-image="./assets/images/Products/Cheesecake/Cheesecake01.jpg">
+                <img class="product-img" src="./assets/images/Products/Cheesecake/Cheesecake01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cheesecakes</span>
+                    <h5>Cheesecake</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 1.55</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>            </div>
+            <div class="pro" data-name="Letter cake with apples" data-price="2.25" data-image="./assets/images/Products/LetterCakeWithApples/LetterCakeWithApples01.jpg">
+                <img style="width: 275px; height: 315px;" src="./assets/images/Products/LetterCakeWithApples/LetterCakeWithApples01.jpg" alt="">
+                <div class="des">
+                    <span>Cakes</span>
+                    <h5>Letter cake with apples</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 2.25</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>              
+            </div>
+            <div class="pro" data-name="Cherry Tart" data-price="1.85" data-image="images/products/mehallab-full-mood-400x394.jpg">
+                <img class="product-img" src="./assets/images/Products/CherryTart/CherryTart01.jpg" alt="">
+                <div class="des">
+                    <span>Tarts</span>
+                    <h5>Cherry Tart</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 1.85</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>             </div>
+            <div class="pro" data-name="'Honey' Cake" data-price="1.95" data-image="./assets/images/Products/HoneyCake/HoneyCake01.png">
+                <img class="product-img" src="./assets/images/Products/HoneyCake/HoneyCake01.png" alt="">
+                <div class="des">
+                    <span>Cakes</span>
+                    <h5>'Honey' Cake</h5><br/>
+                    <div claas="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$ 1.95</h4>
+                </div>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>             </div>
+            <div class="pro" data-name="Cake 'Raffaello' in Ukrainian style" data-price="7.75" data-image="./assets/images/Products/RaffaelloCake/RaffaelloCake01.jpg">
+                <img style="width: 430px; height: 300px;" src="./assets/images/Products/RaffaelloCake/RaffaelloCake01.jpg" alt="">
+                <div class="des">
+                    <span>Cakes</span>
+                    <h5>Cake 'Raffaello' in Ukrainian style</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -377,13 +520,18 @@
                     </div>
                     <h4>$ 7.75</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>             
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
+            <div class="pro" data-name="Ckazka (Ukrainian Poppy Seed Cake with Nuts and Raisins)" data-price="2.50" data-image="./assets/images/Products/Ckazka/Ckazka01.jpg">
+                <img style="width: 260px; height: 300px;" src="./assets/images/Products/Ckazka/Ckazka01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Ckazka (Ukrainian Poppy Seed Cake with Nuts and Raisins)</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -391,15 +539,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 2.50</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>             
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
+            <div class="pro" data-name="Chocolate Cake 'Prague'" data-price="2.00" data-image="./assets/images/Products/ChocolateCakePrague/ChocolateCakePr">
+                <img class="product-img" src="./assets/images/Products/ChocolateCakePrague/ChocolateCakePrague01.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Chocolate Cake 'Prague'</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -407,15 +560,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 2.00</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div> 
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
+            <div class="pro" data-name="Cake 'NIC'" data-price="2.15" data-image="./assets/images/Products/CakeNIC/CakeNIC.jpg">
+                <img class="product-img" src="./assets/images/Products/CakeNIC/CakeNIC.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Cake "NIC"</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -423,15 +581,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 2.15</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>             
             </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
+            <div class="pro" data-name="Cake 'CherryDew'" data-price="1.45" data-image="./assets/images/Products/CakeСherryDew/CakeСherryDew.jpg">
+                <img class="product-img" src="./assets/images/Products/CakeСherryDew/CakeСherryDew.jpg" alt="">
                 <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
+                    <span>Cakes</span>
+                    <h5>Cake 'CherryDew'</h5><br/>
                     <div claas="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -439,57 +602,14 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h4>$ 7.75</h4>
+                    <h4>$ 1.45</h4>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
-                    <div claas="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$ 7.75</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
-                    <div claas="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$ 7.75</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="pro" data-name="Cartoon Astronaut T-Shirts" data-price="7.75" data-image="images/products/mehallab-full-mood-400x394.jpg">
-                <img src="images/products/Lviv-Syrnyk.jpg.png" alt="">
-                <div class="des">
-                    <span>Adidas</span>
-                    <h5>Cartoon Astronaut T-Shirts</h5><br/>
-                    <div claas="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>$ 7.75</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+                <div class="card-actions">
+                    <button class="favorite-btn" title="Add to your favorites">
+                        <i class="fas fa-heart"></i>
+                    </button>
+                    <a href="#"><img src="./assets/images/Icons/Shopping Cart/ShoppingCart.png" class="fal fa-shopping-cart cart" alt=""></a>
+                </div>   
             </div>
         </div>
     </section>
@@ -562,7 +682,7 @@
     </section>
     <footer class="section__paragraph1">
         <div class="col">
-            <img src="images/logo/DanaAndNazarConfectioneryCafe.png" class="logo" alt="">
+            <img src="./assets/images/Logo/Dana and Nazar/Dana and Nazar Confectionery Cafe.jpg" class="logo" alt="">
             <h4>Contacts</h4>
             <p><strong>Address:</strong> 562 Wellington Road, Street 32, Toronto, Canada</p>
             <p><strong>Pnone:</strong> +380 67 833 30 23</p>
@@ -599,20 +719,20 @@
             <h4>Install Our Cafe App</h4>
             <p>from Apple Store | Google Play Market</p>
             <div class="row">
-                <img class="play-markets" src="images/apps/Apple-Store-Logo.jpg" alt="">
-                <img class="play-markets" src="images/apps/Google-Play-Logo.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Apple Store/Apple Store.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Google Play Market/Google Play Market.jpg" alt="">
             </div>
             <p>Secure Payment Gateways</p>
             <div class="row">
-                <img class="payments" src="images/payments/Visa_Pay_Logo.png" alt="">
-                <img class="payments" src="images/payments/Mastercard_Pay_Logo.png" alt="">
-                <img class="payments" src="images/payments/Amazon_Pay_Logo.png" alt="">
-                <img class="payments" src="images/payments/Google_Pay_Logo.png" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Visa/Visa.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/MasterCard/MasterCard.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Apple Pay/Apple Pay.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Google Pay/Google Pay.jpg" alt="">
             </div>
             <div class="row">
-                <img class="payments" src="images/payments/PayPal_Pay_Logo.png" alt="">
-                <img class="payments" src="images/payments/Stripe_Payment_Logo.png" alt="">
-                <img class="payments" src="images/payments/UnionPay_Pay_Logo.png" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Paypal/Paypal.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Stripe/Stripe.jpg" alt="">
+                <img class="play-markets" src="./assets/images/Apps/Union Pay/Union Pay.jpg" alt="">
             </div>
         </div>
         <div class="copyright">
@@ -622,5 +742,6 @@
     <script src="js/index.js"></script>
     <script src="js/jQuery.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/listOfFavoriteProducts.js"></script>
 </body>
 </html>

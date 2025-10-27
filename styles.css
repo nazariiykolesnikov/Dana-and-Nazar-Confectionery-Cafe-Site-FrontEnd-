@@ -584,7 +584,7 @@ button.bannerBtn {
 }
 
 #product1 .pro {
-    width: 23%;
+    width: 33%;
     min-width: 250px;
     padding: 10px 12px;
     border: 1px solid #cce7d0;
@@ -611,6 +611,11 @@ button.bannerBtn {
 
 #product1 p {
     font-family: "Italianno", cursive;
+}
+
+.product-img {
+    min-height: 300px;
+    height: 50%;
 }
 
 #product1 .pro .des h5 {
@@ -751,7 +756,7 @@ button.bannerBtn {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("images/products/234354355365465465.webp");
+    background-image: url("./assets/images/Banners/ArabicDesserts001.jpg");
     width: 100%;
     height: 40vh;
     background-size: cover;
@@ -800,7 +805,7 @@ button.bannerBtn {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("images/banner/Kunafah-13.jpg");
+    background-image: url("./assets/images/Banners/ArabicDesserts002.jpg");
     min-width: 580px;
     height: 50vh;
     background-size: cover;
@@ -809,7 +814,7 @@ button.bannerBtn {
 }
 
 #sm-banner .banner-box2 {
-    background-image: url("images/banner/Bakhlava-15.jpg");
+    background-image: url("./assets/images/Banners/ArabicDesserts003.jpg");
 }
 
 #sm-banner h4 {
@@ -870,20 +875,6 @@ button.bannerBtn {
     padding: 0 80px;
 }
 
-#banner3 .banner-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-image: url("images/banner/AR-22137-Strawberry-Angel-Food-Dessert-4x3-7d658d0858f141fb8637f6a6472c84ef.jpg");
-    min-width: 30%;
-    height: 30vh;
-    background-size: cover;
-    background-position: center;
-    padding: 30px;
-    margin-bottom: 20px;
-}
-
 #banner3 .banner-box h2 {
     font-family: "Satisfy", cursive;
 }
@@ -893,15 +884,30 @@ button.bannerBtn {
 }
 
 #banner3 .banner-box1 {
-    background-image: url("images/banner/2336786542536.jpg");
+    background-image: url("./assets/images/Banners/UkrainianDesserts001.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 450px;
+    height: 30vh;
 }
 
 #banner3 .banner-box2 {
-    background-image: url("images/banner/AR-22137-Strawberry-Angel-Food-Dessert-4x3-7d658d0858f141fb8637f6a6472c84ef.jpg");
+    background-image: url("./assets/images/Banners/UkrainianDesserts002.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 450px;
+    height: 30vh;
 }
 
 #banner3 .banner-box3 {
-    background-image: url("images/banner/34654654756765757.jpg");
+    background-image: url("./assets/images/Banners/UkrainianDesserts003.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 450px;
+    height: 30vh;
 }
 
 #banner3 h2 {
@@ -925,7 +931,8 @@ button.bannerBtn {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    background-image: url("images/banner/34654654756765757.jpg");
+    background-size: cover;
+    background-image: url("./assets/images/Banners/UkrainianDesserts005.jpg");
     background-repeat: no-repeat;
     background-position: 20% 30%;
     background-color: #9b1762;
@@ -1008,6 +1015,7 @@ button.bannerBtn {
 }
 
 .videoplayer_heading {
+    font-family: "Parisienne", cursive;
     font-size: 2.2rem;
     font-weight: bold;
     color: #9b1762;
@@ -1113,6 +1121,22 @@ footer .col {
     margin-bottom: 20px;
 }
 
+footer .col h4 {
+    font-family: "Italianno", cursive;
+}
+
+footer .col a {
+    font-family: "Alex Brush", cursive;
+}
+
+footer .col p {
+    font-family: "Alex Brush", cursive;
+}
+
+footer .col p strong {
+    font-family: "Rouge Script", cursive;
+}
+
 footer .logo {
     margin-bottom: 30px;
 }
@@ -1155,10 +1179,12 @@ footer .follow .icon i:hover {
 }
 
 footer .install h4 {
+    font-family: "Parisienne", cursive;
     font-size: 26px;
 }
 
 footer .install p {
+    font-family: "Allura", cursive;
     font-size: 20px;
 }
 
@@ -1176,6 +1202,7 @@ footer a:hover {
 }
 
 footer .copyright {
+    font-family: "Satisfy", cursive;
     width: 100%;
     text-align: center;
 }
@@ -1344,6 +1371,53 @@ footer .copyright p {
   color: #ffffff;
   padding: 10px 20px;
   border-bottom: 1px solid #f3c1d9;
+}
+
+.side-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background: #fff0f6;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.side-panel.active {
+  transform: translateX(0);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-header h3 {
+  color: #ba2d7d;
+  font-family: 'Playfair Display', serif;
+}
+
+#favoriteItems li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#favoriteItems img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+
+#favoriteItems strong {
+  color: #9b1762;
 }
 
 @media (max-width: 768px) {
