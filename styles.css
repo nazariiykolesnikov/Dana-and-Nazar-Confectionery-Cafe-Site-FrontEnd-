@@ -1116,7 +1116,7 @@ button.bannerBtn {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./assets/images/Banners/ArabicDesserts002.jpg");
+    background-image: url("./assets/images/Banners/ChocolateBabka/ChocolateBabka01.jpg");
     min-width: 580px;
     width: 90%;
     height: 50vh;
@@ -1126,7 +1126,7 @@ button.bannerBtn {
 }
 
 #sm-banner .banner-box2 {
-    background-image: url("./assets/images/Banners/ArabicDesserts003.jpg");
+    background-image: url("./assets/images/Banners/ChocolateBabka/ChocolateBabka01.jpg");
 }
 
 #sm-banner h4 {
