@@ -1117,7 +1117,7 @@ button.bannerBtn {
     justify-content: center;
     align-items: flex-start;
     background-image: url("./assets/images/Banners/ChocolateBabka/ChocolateBabka01.jpg");
-    min-width: 580px;
+    min-width: 400px;
     width: 90%;
     height: 50vh;
     background-size: cover;
@@ -2093,7 +2093,6 @@ footer .copyright p {
   }
 
   #sm-banner .banner-box {
-    width: 75% !important;
     padding-left: -10px;
     margin-left: -15px;
   }
