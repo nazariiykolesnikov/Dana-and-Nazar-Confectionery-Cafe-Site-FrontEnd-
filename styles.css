@@ -2093,6 +2093,8 @@ footer .copyright p {
   }
 
   #sm-banner .banner-box {
+    min-width: 300px;
+    width: 80%;
     padding-left: -10px;
     margin-left: -15px;
   }
